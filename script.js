@@ -14,6 +14,12 @@ closeBtn.onclick = function () {
 modal.style.display = "none";
 };
 
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('open');
+};
+
+
 window.onclick = function (e) {
     if (e.target == modal) {
         modal.style.display = "none";
