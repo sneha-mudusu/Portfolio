@@ -2,79 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Sneha Mudusu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="Style.css">
-  <style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneha's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <img src="profile.jpg" alt="Profile Image" />
+
+  <!-- Top Navigation Panel -->
+  <header class="navbar">
+    <div class="nav-container">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#info">Info</a>
+        <a href="#fun">Fun</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main layout: Sidebar + Body -->
+  <div class="main-layout">
+    
+    <!-- Sidebar Panel -->
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Sneha" class="profile-pic"/>
       <h2>Sneha Mudusu</h2>
-      <span>Web Developer/Data Analyst</span>
-      <div class="icons">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-figma"></i></a>
-      </div>
-      <div class="info">
-        <div><i class="fas fa-phone"></i> +1 201 - ••••••••</div>
-        <div><i class="fas fa-envelope"></i> Mudusu.sneha@gmail.com</div>
-        <div><i class="fas fa-map-marker-alt"></i> New York, USA</div>
-        <div><i class="fas fa-birthday-cake"></i> 17, NOV. 1999</div>
-      </div>
-      <button>View Resume</button>
-    </div>
+      <p class="title">Web Developer / Data Analyst</p>
+      <ul class="contact">
+        <li>📧 mudusu.sneha@gmail.com</li>
+        <li>📱 +1 201-•••••••</li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </aside>
 
-    <div class="main-content">
-      <h3>About</h3>
-      <p>I am a <b>passionate tech enthusiast</b> with a deep interest in <b>Web and App Development</b>...
-      <br />
-      <br />
-      Noteworthy Achievement: <b>Top 10 Teams at hackathon</b> hosted by Zyc org at CSF, Gujarat.
-      <br />
-      <br />
-      Interned as Flutter Developer, UI/UX Designer and Java Developer. Gained holistic <b>understanding on front-end and back-end technologies</b>, as well as user experience.
-      </p>
+    <!-- Main Content Area -->
+    <main class="content">
+      <section id="about"><h2>Hi, This is Sneha</h2><p>Intro paragraph here...</p></section>
+      <section id="resume"><h2>Resume</h2><p>Resume info...</p></section>
+      <section id="projects"><h2>Projects</h2><p>Project list...</p></section>
+      <section id="info"><h2>Info</h2><p>Additional info...</p></section>
+      <section id="fun"><h2>Fun</h2><p>Fun stuff!</p></section>
+    </main>
 
-      <div class="section">
-        <h3>What I Do</h3>
-        <div class="cards">
-          <div class="card">
-            <h4>Web Front-End Development</h4>
-            <p>Robust proficiency in React.js. I excel at transforming design concepts into dynamic, user-friendly websites.</p>
-          </div>
-          <div class="card">
-            <h4>UI/UX Designing</h4>
-            <p>Creating intuitive and visually engaging user experiences. Translate needs into seamless, impactful designs.</p>
-          </div>
-          <div class="card">
-            <h4>Back-End Development</h4>
-            <p>Skilled in Node.js, Express.js, Java. Build backend systems with databases like MongoDB and MySQL.</p>
-          </div>
-          <div class="card">
-            <h4>Flutter App Development</h4>
-            <p>Proficient in Flutter and Firebase. Build cross-platform apps with real-time data and backend integration.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="nav-bar">
-      <button><a href="Aboutme.html">About</a></button>
-      <button><a href="Experience.html">Experience</a></button>
-      <button><a href="Project.html">Projects</a></button>
-      <button><a href="Skills.html">Skills</a></button>
-      <button><a href="Contact.html">Contact</a></button>
-    </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Sneha Mudusu | All rights reserved</p>
+  </footer>
+
 </body>
 </html>
