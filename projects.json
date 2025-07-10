@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Quiz App",
+    "image": "images/kitty.jpg",
+    "link": "https://yourlink.com/quiz"
+  },
+  {
+    "title": "Snake Game",
+    "image": "images/kitty.jpg",
+    "link": "https://yourlink.com/snake"
+  },
+  {
+    "title": "Tic Tac Toe",
+    "image": "images/kitty.jpg",
+    "link": "https://yourlink.com/tictactoe"
+  }
+]

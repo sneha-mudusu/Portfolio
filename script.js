@@ -39,3 +39,45 @@ if (e.target === modal) {
 }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("project-modal");
+  const modalImg = document.getElementById("zoomed-project-img");
+  const closeBtn = document.querySelector(".close");
+  const grid = document.getElementById("projects-grid");
+
+  // Fetch project data from JSON file
+  fetch("projects.json")
+    .then(response => response.json())
+    .then(projects => {
+      projects.forEach(project => {
+        const card = document.createElement("div");
+        card.classList.add("project-card");
+        card.innerHTML = `
+          <img src="${project.image}" alt="${project.title}" class="project-img">
+          <h3>${project.title}</h3>
+          <a href="${project.link}" class="project-link" target="_blank">View Project</a>
+        `;
+        grid.appendChild(card);
+      });
+
+      // Now bind zoom to images
+      document.querySelectorAll(".project-img").forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+        });
+      });
+    });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
+
