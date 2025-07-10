@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sneha's Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -26,24 +27,123 @@
     
     <!-- Sidebar Panel -->
     <aside class="sidebar">
-      <img src="profile.jpg" alt="Sneha" class="profile-pic"/>
+      <img src="Images/profile.jpg" alt="Sneha" class="profile-pic"/>
       <h2>Sneha Mudusu</h2>
       <p class="title">Web Developer / Data Analyst</p>
       <ul class="contact">
-        <li>📧 mudusu.sneha@gmail.com</li>
-        <li>📱 +1 201-•••••••</li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">GitHub</a></li>
+        <li><em><strong>Email:</strong></em> mudusu.sneha@gmail.com</li>
+        <li><em><strong>Phone:</strong></em> +1 201-•••••••</li>
+        <li><a href="https://www.linkedin.com/in/sneha-mudusu/">LinkedIn</a></li>
+        <li><a href="https://github.com/sneha-mudusu">GitHub</a></li>
       </ul>
     </aside>
 
     <!-- Main Content Area -->
     <main class="content">
-      <section id="about"><h2>Hi, This is Sneha</h2><p>Intro paragraph here...</p></section>
-      <section id="resume"><h2>Resume</h2><p>Resume info...</p></section>
-      <section id="projects"><h2>Projects</h2><p>Project list...</p></section>
-      <section id="info"><h2>Info</h2><p>Additional info...</p></section>
-      <section id="fun"><h2>Fun</h2><p>Fun stuff!</p></section>
+      <section id="about">
+        <h2>Hi, I'm Sneha 👋</h2>
+        <p class="intro">
+          I’m a <strong>passionate tech enthusiast</strong> with a deep interest in
+          <strong>Web and App Development</strong>. I love building clean,
+          responsive interfaces and solving real-world problems through code.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <h3>🚀 Hackathon Finalist</h3>
+            <p>Top 10 Teams at Zyc Org Hackathon (CSF, Gujarat)</p>
+          </div>
+          <div class="highlight-box">
+            <h3>💡 Multi-role Experience</h3>
+            <p>Interned as Flutter Developer, UI/UX Designer, Java Developer</p>
+          </div>
+          <div class="highlight-box">
+            <h3>🧠 Tech Skills</h3>
+            <p>Full-stack web dev, backend logic, and user-first design</p>
+          </div>
+        </div>
+      </section>
+      <section id="resume">
+        <h2>My Resume</h2>
+        <div class="resume-preview">
+          <img src="Images/profile.jpg" alt="Sneha Resume" id="resume-image">
+        </div>
+
+        <!-- Modal for zoom -->
+        <div id="resume-modal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="zoomed-resume">
+        </div>
+      </section>
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <!-- Example Project (repeat 9x) -->
+          <div class="project-card">
+            <img src="quiz-app.png" alt="Quiz App" class="project-img" onclick="openModal(this)">
+            <h3>Quiz App</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="snake-game.png" alt="Snake Game" class="project-img" onclick="openModal(this)">
+            <h3>Snake Game</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="tic-tac-toe.png" alt="Tic Tac Toe" class="project-img" onclick="openModal(this)">
+            <h3>Tic Tac Toe</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="weather-app.png" alt="Weather App" class="project-img" onclick="openModal(this)">
+            <h3>Weather App</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="todo-list.png" alt="To-Do List" class="project-img" onclick="openModal(this)">
+            <h3>To-Do List</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="chat-app.png" alt="Chat App" class="project-img" onclick="openModal(this)">
+            <h3>Chat App</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="blog-site.png" alt="Blog Site" class="project-img" onclick="openModal(this)">
+            <h3>Blog Site</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="calculator.png" alt="Calculator" class="project-img" onclick="openModal(this)">
+            <h3>Calculator</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="portfolio-v2.png" alt="Portfolio V2" class="project-img" onclick="openModal(this)">
+            <h3>Portfolio V2</h3>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <!-- Image Zoom Modal -->
+        <div id="project-modal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="zoomed-project-img">
+        </div>
+      </section>
+
+      <section id="info">
+        <h2>Info</h2><p>Additional info...</p></section>
+      <section id="fun">
+        <h2>Fun</h2><p>Fun stuff!</p></section>
     </main>
 
   </div>
