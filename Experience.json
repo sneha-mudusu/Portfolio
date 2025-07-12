@@ -1,14 +1,20 @@
 [
   {
+    "company": "Success Academy Charter School",
+    "title": "Computer Science Teacher",
+    "dates": "Nov 2024 – Jul 2025",
+    "image": "images/tetra-responsibilities.png"
+  },
+  {
     "company": "Tetra Computing",
     "title": "Data Analyst",
-    "dates": "May 2024 – Jan 2025",
+    "dates": "May 2024 – Nov 2024",
     "image": "images/tetra-responsibilities.png"
   },
   {
     "company": "Cognizaant Mind",
     "title": "Application Developer",
-    "dates": "Aug 2023 – May 2024",
+    "dates": "May 2023 – May 2024",
     "image": "images/cognizant-responsibilities.png"
   },
   {

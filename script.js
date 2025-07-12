@@ -87,30 +87,26 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /*This is for the Experience-Timeline*/
-document.addEventListener("DOMContentLoaded", () => {
-  // Load Experience JSON
-  fetch("experience.json")
-    .then(res => res.json())
-    .then(data => {
-      const timeline = document.getElementById("timeline");
+fetch("experience.json")
+  .then(res => res.json())
+  .then(data => {
+    const timeline = document.getElementById("timeline");
 
-      data.forEach((item, index) => {
-        const dot = `<div class="timeline-dot"></div>`;
-        const content = `
-          <div class="timeline-content">
-            <h3>${item.title} @ ${item.company}</h3>
-            <p>${item.dates}</p>
-            <img src="${item.image}" alt="${item.company} Responsibilities">
-          </div>
-        `;
+    data.forEach((item, index) => {
+      const side = index % 2 === 0 ? "left" : "right";
+      const container = document.createElement("div");
+      container.classList.add("container", side);
 
-        const itemHTML = document.createElement("div");
-        itemHTML.classList.add("timeline-item");
-        itemHTML.innerHTML = dot + content;
+      container.innerHTML = `
+        <div class="content">
+          <h3>${item.title} @ ${item.company}</h3>
+          <p>${item.dates}</p>
+          <img src="${item.image}" alt="${item.company}" />
+        </div>
+      `;
 
-        timeline.appendChild(itemHTML);
-      });
+      timeline.appendChild(container);
     });
-});
+  });
 
 
