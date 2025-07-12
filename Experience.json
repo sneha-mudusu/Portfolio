@@ -1,0 +1,20 @@
+[
+  {
+    "company": "Tetra Computing",
+    "title": "Data Analyst",
+    "dates": "May 2024 – Jan 2025",
+    "image": "images/tetra-responsibilities.png"
+  },
+  {
+    "company": "Cognizaant Mind",
+    "title": "Application Developer",
+    "dates": "Aug 2023 – May 2024",
+    "image": "images/cognizant-responsibilities.png"
+  },
+  {
+    "company": "Sentritech",
+    "title": "Web Dev Intern",
+    "dates": "Jan 2020 – Aug 2020",
+    "image": "images/sentritech-responsibilities.png"
+  }
+]

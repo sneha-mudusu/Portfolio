@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sneha's Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="script.js" defer></script>
+  <script src="Experience.json" defer></script>
 </head>
 <body>
 
@@ -32,18 +34,25 @@
       <img src="images/profile.jpg" alt="Sneha" class="profile-pic"/>
       <h2>Sneha Mudusu</h2>
       <p class="title">Web Developer / Data Analyst</p>
-      <ul class="contact">
-        <li><em><strong>Email:</strong></em> mudusu.sneha@gmail.com</li>
-        <li><em><strong>Phone:</strong></em> +1 201-•••••••</li>
-        <li><a href="https://www.linkedin.com/in/sneha-mudusu/">LinkedIn</a></li>
-        <li><a href="https://github.com/sneha-mudusu">GitHub</a></li>
+      <ul class="contact social-links">
+        <li>
+          <a href="https://linkedin.com/in/your-profile" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/your-username" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </li>
       </ul>
+
     </aside>
 
     <!-- Main Content Area -->
     <main class="content">
 
-      <!-- Introduction Section-->
+      <!-- About Section-->
       <section id="about">
         <h2>Hi, I'm Sneha 👋</h2>
         <p class="intro">
@@ -65,6 +74,12 @@
             <p>Full-stack web dev, backend logic, and user-first design</p>
           </div>
         </div>
+      </section>
+
+      <!-- Experience Section-->
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline" id="timeline"></div>
       </section>
 
       <!-- Resume Section-->

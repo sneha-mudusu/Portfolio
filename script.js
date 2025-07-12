@@ -86,4 +86,31 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+/*This is for the Experience-Timeline*/
+document.addEventListener("DOMContentLoaded", () => {
+  // Load Experience JSON
+  fetch("experience.json")
+    .then(res => res.json())
+    .then(data => {
+      const timeline = document.getElementById("timeline");
+
+      data.forEach((item, index) => {
+        const dot = `<div class="timeline-dot"></div>`;
+        const content = `
+          <div class="timeline-content">
+            <h3>${item.title} @ ${item.company}</h3>
+            <p>${item.dates}</p>
+            <img src="${item.image}" alt="${item.company} Responsibilities">
+          </div>
+        `;
+
+        const itemHTML = document.createElement("div");
+        itemHTML.classList.add("timeline-item");
+        itemHTML.innerHTML = dot + content;
+
+        timeline.appendChild(itemHTML);
+      });
+    });
+});
+
 
